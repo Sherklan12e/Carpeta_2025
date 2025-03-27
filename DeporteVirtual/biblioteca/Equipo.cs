@@ -5,7 +5,7 @@ namespace biblioteca;
 public class Equipo
 {
    public List<Jugador> Jugadores { get; set; } = new List<Jugador>();
-    public List<Sesion> SesionesEntrenamiento { get; set; } = new List<Sesion>();
+    public List<Session> SesionesEntrenamiento { get; set; } = new List<Session>();
 
     public void Entrenar()
     {

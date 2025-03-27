@@ -1,8 +1,8 @@
 
-namespace biblioteca.session
+namespace biblioteca.session;
+
+
+public class SessionLirica: Session
 {
-    public class SessionLirica
-    {
-        public override void AplicarA(Jugador jugador) => jugador.AplicarEntrenamientoLirico();
-    }
+    public override void AplicarA(Jugador jugador) => jugador.AplicarEntrenamientoLirico();
 }

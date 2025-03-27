@@ -4,7 +4,7 @@ public interface TipoJugador
 {
     public double GetPrecision(Jugador jugador);
     public double GetVisionGeneral(Jugador jugador);
-    public void AplicarEntrenamientoFisico();
-    public void AplicarEntrenamientoLirico();
-    public void AplicarEntrenamientoTactico();
+    public void AplicarEntrenamientoFisico(Jugador jugador);
+    public void AplicarEntrenamientoLirico(Jugador jugador);
+    public void AplicarEntrenamientoTactico(Jugador jugador);
 }

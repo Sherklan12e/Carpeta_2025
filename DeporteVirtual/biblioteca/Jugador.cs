@@ -6,7 +6,7 @@ public class Jugador
     public double VisionCompaneros { get; set; }
     public double Potencia { get; set; }
     public double HabilidadPases { get; set; }
-    public ITipoJugador TipoJugador { get; set; }
+    public TipoJugador TipoJugador { get; set; }
 
     public double GetPrecision() => TipoJugador.GetPrecision(this);
     public double GetVisionGeneral() => TipoJugador.GetVisionGeneral(this);
