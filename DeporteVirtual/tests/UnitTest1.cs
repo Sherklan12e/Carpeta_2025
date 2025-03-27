@@ -12,13 +12,13 @@ public class UnitTest1
     public void PotenciaJugador()
     {
         var jugador = new Jugador();
-
-        jugador.AplicarEntrenamientoFisico();
+        jugador.TipoJugador = new TipoJugador.AplicarEntrenamientoFisico(jugador);
 
         Assert.NotEqual(1,jugador.Potencia);
 
     }
 }
+
 
 
 
