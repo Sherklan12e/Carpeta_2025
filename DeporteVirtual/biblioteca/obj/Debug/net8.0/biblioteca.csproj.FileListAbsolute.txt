@@ -1,0 +1,5 @@
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\biblioteca.AssemblyInfoInputs.cache
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\biblioteca.AssemblyInfo.cs
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\biblioteca.sourcelink.json

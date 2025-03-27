@@ -3,30 +3,27 @@ namespace biblioteca;
 
 public class Defensor : TipoJugador
 {
-    public double Quite {get; set;}
+    public double Quite { get; set; }
 
-    public void AplicarEntrenamientoFisico()
+    public double GetPrecision(Jugador jugador) => Quite;
+    public double GetVisionGeneral(Jugador jugador) => jugador.VisionCompaneros + jugador.VisionJuego;
+
+    public void AplicarEntrenamientoFisico(Jugador jugador)
     {
-        throw new NotImplementedException();
+        jugador.Potencia += 1;
+        jugador.HabilidadPases += 0.5;
+        Quite += 0.5;
     }
 
-    public void AplicarEntrenamientoLirico()
+    public void AplicarEntrenamientoLirico(Jugador jugador)
     {
-        throw new NotImplementedException();
+        jugador.HabilidadPases += 1;
+        jugador.VisionJuego += 0.5;
     }
 
-    public void AplicarEntrenamientoTactico()
+    public void AplicarEntrenamientoTactico(Jugador jugador)
     {
-        throw new NotImplementedException();
-    }
-
-    public double GetPrecision(Jugador jugador)
-    {
-        throw new NotImplementedException();
-    }
-
-    public double GetVisionGeneral(Jugador jugador)
-    {
-        throw new NotImplementedException();
+        jugador.VisionJuego += 0.5;
+        jugador.VisionCompaneros += 1;
     }
 }

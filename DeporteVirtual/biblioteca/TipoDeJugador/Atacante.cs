@@ -3,23 +3,27 @@ namespace biblioteca;
 
 public class Atacante: TipoJugador
 {
-    public double anotacion {get;set;}
-    
+    public double Anotacion { get; set; }
 
-    public double GetPrecision(Jugador jugador){
-        return 2;
+    public double GetPrecision(Jugador jugador) => Anotacion;
+    public double GetVisionGeneral(Jugador jugador) => jugador.VisionJuego + jugador.HabilidadPases;
+
+    public void AplicarEntrenamientoFisico(Jugador jugador)
+    {
+        jugador.Potencia += 1;
+        jugador.HabilidadPases += 0.5;
     }
 
-    public double GetVisionGeneral(Jugador jugador){
-        return 2;
+    public void AplicarEntrenamientoLirico(Jugador jugador)
+    {
+        jugador.HabilidadPases += 1;
+        Anotacion += 0.5;
     }
-    public void AplicarEntrenamientoFisico(){
 
-    }
-    public void AplicarEntrenamientoLirico(){
-        
-    }
-    public void AplicarEntrenamientoTactico(){
-        
+    public void AplicarEntrenamientoTactico(Jugador jugador)
+    {
+        jugador.HabilidadPases += 0.5;
+        jugador.VisionJuego += 0.5;
+        jugador.VisionCompaneros += 0.5;
     }
 }
