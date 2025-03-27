@@ -15,3 +15,10 @@ C:\Users\Lab15-PC01\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\bibl
 C:\Users\Lab15-PC01\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\refint\biblioteca.dll
 C:\Users\Lab15-PC01\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\biblioteca.pdb
 C:\Users\Lab15-PC01\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\ref\biblioteca.dll
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\bin\Debug\net8.0\biblioteca.deps.json
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\bin\Debug\net8.0\biblioteca.dll
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\bin\Debug\net8.0\biblioteca.pdb
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\biblioteca.dll
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\refint\biblioteca.dll
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\biblioteca.pdb
+C:\Users\davis\Documents\repos\Carpeta_2025\DeporteVirtual\biblioteca\obj\Debug\net8.0\ref\biblioteca.dll

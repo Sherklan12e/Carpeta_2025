@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Ub2cl/xD+9A=",
+  "dgSpecHash": "fwM+nqSfwss=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lab15-PC01\\Carpeta_2025\\DeporteVirtual\\biblioteca\\biblioteca.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\davis\\Documents\\repos\\Carpeta_2025\\DeporteVirtual\\biblioteca\\biblioteca.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\davis\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.14\\microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
+    "C:\\Users\\davis\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.14\\microsoft.windowsdesktop.app.ref.8.0.14.nupkg.sha512",
+    "C:\\Users\\davis\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.14\\microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
