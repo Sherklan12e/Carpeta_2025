@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace biblioteca;
 
-namespace biblioteca
+public class Bolillero
 {
-    public class Bolillero
-    {
-        private IAzar azar;
+    private IAzar azar;
     private List<int> dentro;
     private List<int> fuera;
 
@@ -58,5 +53,4 @@ namespace biblioteca
 
     public int CantidadDentro() => dentro.Count;
     public int CantidadFuera() => fuera.Count;
-    }
 }

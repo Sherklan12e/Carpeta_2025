@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace biblioteca
+namespace biblioteca;
+public class Primero
 {
-    public class Primero
+    public int ObtenerSiguiente(int maximo)
     {
-        public int ObtenerSiguiente(int maximo)
-        {
-            return 0;
-        }
+        return 0;
     }
 }

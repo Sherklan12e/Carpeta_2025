@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace biblioteca
+namespace biblioteca;
+
+public interface IAzar
 {
-    public class IAzar
-    {
-        int ObtenerSiguiente(int maximo);
+    int ObtenerSiguiente(int maximo);
 
-    }
 }
