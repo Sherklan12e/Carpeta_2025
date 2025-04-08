@@ -1,4 +1,5 @@
-﻿namespace tests;
+﻿using biblioteca;
+namespace tests;
 
 public class UnitTest1
 {
