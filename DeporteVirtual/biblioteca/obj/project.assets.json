@@ -8,24 +8,32 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\davis\\.nuget\\packages\\": {}
+    "C:\\Users\\Lab15-PC01\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davis\\Documents\\repos\\Carpeta_2025\\DeporteVirtual\\biblioteca\\biblioteca.csproj",
+      "projectUniqueName": "C:\\Users\\Lab15-PC01\\Documents\\Carpeta_2025\\DeporteVirtual\\biblioteca\\biblioteca.csproj",
       "projectName": "biblioteca",
-      "projectPath": "C:\\Users\\davis\\Documents\\repos\\Carpeta_2025\\DeporteVirtual\\biblioteca\\biblioteca.csproj",
-      "packagesPath": "C:\\Users\\davis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\davis\\Documents\\repos\\Carpeta_2025\\DeporteVirtual\\biblioteca\\obj\\",
+      "projectPath": "C:\\Users\\Lab15-PC01\\Documents\\Carpeta_2025\\DeporteVirtual\\biblioteca\\biblioteca.csproj",
+      "packagesPath": "C:\\Users\\Lab15-PC01\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lab15-PC01\\Documents\\Carpeta_2025\\DeporteVirtual\\biblioteca\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\davis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Lab15-PC01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -60,20 +68,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

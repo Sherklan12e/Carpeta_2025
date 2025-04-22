@@ -1,6 +1,5 @@
-
 namespace biblioteca;
-public class Primero
+public class Primero : IAzar
 {
     public int ObtenerSiguiente(int maximo)
     {

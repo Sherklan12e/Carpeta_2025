@@ -1,56 +1,68 @@
 namespace biblioteca;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 public class Bolillero
 {
-    private IAzar azar;
-    private List<int> dentro;
-    private List<int> fuera;
+    private List<int> _adentro;
+    private List<int> _afuera;
+    private IAzar _azar;
 
     public Bolillero(int cantidad, IAzar azar)
     {
-        this.azar = azar;
-        dentro = Enumerable.Range(0, cantidad).ToList();
-        fuera = new List<int>();
+        _azar = azar;
+        _adentro = Enumerable.Range(0, cantidad).ToList();
+        _afuera = new List<int>();
     }
 
     public int SacarBolilla()
     {
-        int indice = azar.ObtenerSiguiente(dentro.Count);
-        int bolilla = dentro[indice];
-        dentro.RemoveAt(indice);
-        fuera.Add(bolilla);
+        int indice = _azar.ObtenerSiguiente(_adentro.Count);
+        int bolilla = _adentro[indice];
+        _adentro.RemoveAt(indice);
+        _afuera.Add(bolilla);
         return bolilla;
     }
 
     public void ReIngresar()
     {
-        dentro.AddRange(fuera);
-        fuera.Clear();
+        _adentro.AddRange(_afuera);
+        _afuera.Clear();
     }
 
-    public bool Jugar(List<int> jugada)
+    public async Task<bool> Jugar(List<int> jugada)
     {
         ReIngresar();
-        foreach (var esperado in jugada)
+        bool resultado = true;
+
+        foreach (var numero in jugada)
         {
-            var bolilla = SacarBolilla();
-            if (bolilla != esperado)
-                return false;
+            int bolilla = SacarBolilla();
+            if (bolilla != numero)
+            {
+                resultado = false;
+                break;
+            }
         }
-        return true;
+
+        return await Task.FromResult(resultado);
     }
 
-    public int JugarNVeces(List<int> jugada, int veces)
+    public async Task<int> JugarNVeces(List<int> jugada, int veces)
     {
         int ganadas = 0;
+
         for (int i = 0; i < veces; i++)
         {
-            if (Jugar(jugada))
-                ganadas++;
+            bool gano = await Jugar(jugada);
+            if (gano) ganadas++;
         }
+
         return ganadas;
     }
 
-    public int CantidadDentro() => dentro.Count;
-    public int CantidadFuera() => fuera.Count;
+    public int CantidadAdentro => _adentro.Count;
+    public int CantidadAfuera => _afuera.Count;
 }
