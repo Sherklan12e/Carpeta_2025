@@ -121,3 +121,13 @@ C:\Users\Lab15-PC01\Documents\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0
 C:\Users\Lab15-PC01\Documents\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\tests.dll
 C:\Users\Lab15-PC01\Documents\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\refint\tests.dll
 C:\Users\Lab15-PC01\Documents\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\tests.pdb
+C:\Users\Lab15-PC01\Desktop\Carpeta_2025\DeporteVirtual\tests\bin\Debug\net8.0\CoverletSourceRootsMapping_tests
+C:\Users\Lab15-PC01\Desktop\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\tests.csproj.AssemblyReference.cache
+C:\Users\Lab15-PC01\Desktop\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lab15-PC01\Desktop\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\tests.AssemblyInfoInputs.cache
+C:\Users\Lab15-PC01\Desktop\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\tests.AssemblyInfo.cs
+C:\Users\Lab15-PC01\Desktop\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\tests.csproj.CoreCompileInputs.cache
+C:\Users\Lab15-PC01\Desktop\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\tests.sourcelink.json
+C:\Users\Lab15-PC01\Desktop\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\tests.dll
+C:\Users\Lab15-PC01\Desktop\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\refint\tests.dll
+C:\Users\Lab15-PC01\Desktop\Carpeta_2025\DeporteVirtual\tests\obj\Debug\net8.0\tests.pdb
