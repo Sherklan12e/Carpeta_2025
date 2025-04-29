@@ -5,6 +5,12 @@
 # compiled source #
 ###################
 *.com
+bin
+obj
+*bin
+*obj
+*.bin
+*.obj
 *.class
 *.dll
 *.exe
