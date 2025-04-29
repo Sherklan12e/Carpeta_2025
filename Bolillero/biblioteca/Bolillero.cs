@@ -18,7 +18,7 @@ public class Bolillero
     }
 
     public int SacarBolilla()
-    {
+    {       
         int indice = _azar.ObtenerSiguiente(_adentro.Count);
         int bolilla = _adentro[indice];
         _adentro.RemoveAt(indice);
