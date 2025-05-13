@@ -1,68 +1,81 @@
-namespace biblioteca;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿namespace TrabajoBolillero;
 
-public class Bolillero
+public class Bolillero : IClonable
 {
-    private List<int> _adentro;
-    private List<int> _afuera;
-    private IAzar _azar;
+    public List<int> BolillasAdentro { get; set; } = new List<int>();
+    public List<int> BolillasAfuera { get; set; } = new List<int>();
+    ILogica Logica;
 
-    public Bolillero(int cantidad, IAzar azar)
+    public Bolillero(int cantidadBolillas, ILogica logica)
     {
-        _azar = azar;
-        _adentro = Enumerable.Range(0, cantidad).ToList();
-        _afuera = new List<int>();
+        BolillasAdentro = new List<int>();
+        BolillasAfuera = new List<int>();
+
+        for (int i = 0; i < cantidadBolillas; BolillasAdentro.Add(i++)) ;
+
+        Logica = logica;
     }
 
-    public int SacarBolilla()
+    public Bolillero(Bolillero original)
     {
-        int indice = _azar.ObtenerSiguiente(_adentro.Count);
-        int bolilla = _adentro[indice];
-        _adentro.RemoveAt(indice);
-        _afuera.Add(bolilla);
+        BolillasAdentro = new List<int>(original.BolillasAdentro);
+        BolillasAfuera = new List<int>(original.BolillasAfuera);
+        Logica = original.Logica;
+    }
+
+    public int SacarBolillas()
+    {
+        int bolilla = Logica.SacarBolillas(this);
+        BolillasAfuera.Add(bolilla);
+        BolillasAdentro.Remove(bolilla);
+
         return bolilla;
     }
 
-    public void ReIngresar()
+    public int JugarNVeces(List<int> jugada, int cantidad)
     {
-        _adentro.AddRange(_afuera);
-        _afuera.Clear();
+        if (cantidad < 0)
+        {
+            throw new ArgumentException("La cantidad de veces a jugar debe ser no negativa.", nameof(cantidad));
+        }
+
+        int aciertos = 0;
+        for (int i = 0; i < cantidad; i++)
+        {
+            ReIngresarBolillas();
+            if (Jugar(jugada))
+            {
+                aciertos++;
+            }
+        }
+        return aciertos;
     }
 
-    public async Task<bool> Jugar(List<int> jugada)
+    public bool Jugar(IList<int> jugada)
     {
-        ReIngresar();
-        bool resultado = true;
-
-        foreach (var numero in jugada)
+        foreach (var objetivo in jugada)
         {
-            int bolilla = SacarBolilla();
-            if (bolilla != numero)
+            int numero = SacarBolillas();
+            if (numero != objetivo)
             {
-                resultado = false;
-                break;
+                ReIngresarBolillas();
+                return false;
             }
         }
 
-        return await Task.FromResult(resultado);
+        ReIngresarBolillas();
+
+        return true;
     }
 
-    public async Task<int> JugarNVeces(List<int> jugada, int veces)
+    public void ReIngresarBolillas()
     {
-        int ganadas = 0;
-
-        for (int i = 0; i < veces; i++)
-        {
-            bool gano = await Jugar(jugada);
-            if (gano) ganadas++;
-        }
-
-        return ganadas;
+        BolillasAdentro.AddRange(BolillasAfuera);
+        BolillasAfuera.Clear();
+        BolillasAdentro.Sort(); // Ordena de menor a mayor
     }
 
-    public int CantidadAdentro => _adentro.Count;
-    public int CantidadAfuera => _afuera.Count;
+
+    public object Clon() => new Bolillero(this);
+
 }

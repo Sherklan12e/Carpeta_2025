@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mHjrZ6tDrsU=",
+  "dgSpecHash": "gsIUhhQKlOs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lab15-PC01\\Desktop\\Carpeta_2025\\DeporteVirtual\\tests\\tests.csproj",
+  "projectFilePath": "C:\\Users\\Lab15-PC01\\Documents\\Carpeta_2025\\DeporteVirtual\\tests\\tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lab15-PC01\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Lab15-PC01\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
